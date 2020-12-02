@@ -6,7 +6,6 @@ const trimAndParse = (string: string) => {
 }
 
 module.exports = {
-	readInput: (fileName: string) => {
-		return fs.readFileSync(fileName).toString().split("\n").map(trimAndParse);	
-	}
+	readNumberArrayInput: (fileName: string) : number[] => fs.readFileSync(fileName).toString().split("\n").map(trimAndParse),
+	readLinesInput: (fileName: string) : string[] => fs.readFileSync(fileName).toString().split("\n"),
 }

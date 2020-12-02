@@ -1,4 +1,4 @@
-const { readInput } = require("../utils")
+const { readNumberArrayInput } = require("../utils")
 const path = require("path");
 
 const SUM = 2020
@@ -43,7 +43,7 @@ const findTripleWithSum = (sum: number, numbers: number[]) : [number, number, nu
 const multiplyAll = (acc: number, val: number) => acc * val
 
 /*** SOLUTION CALCULATION ***/
-const input: number[] = readInput(path.resolve(__dirname, "input.txt"))
+const input = readNumberArrayInput(path.resolve(__dirname, "input.txt"))
 
 // Sort increasingly
 const sortedInput = input.sort((a, b) => a-b)
