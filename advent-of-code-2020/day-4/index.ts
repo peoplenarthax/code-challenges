@@ -1,5 +1,3 @@
-import { access } from "fs/promises";
-
 const { readLinesBetweenBlankSpacesInput } = require("../utils")
 const path = require("path");
 
@@ -42,6 +40,7 @@ const checkPassportId : CheckFunction = (passportId: string) =>
 	RegExp(/^\d{9}$/).test(passportId)
 
 // We map the passport attribute to its own validation function
+// TODO: Refactor using only RegEx to practice
 const validationMap : { [k: string] : CheckFunction }= {
 	byr: checkRange(1920, 2002),
 	iyr: checkRange(2010, 2020),
