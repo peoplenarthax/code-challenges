@@ -1,6 +1,3 @@
-import { cpuUsage } from "process";
-import { split } from "../node_modules/ts-node/dist/index";
-
 const { readLinesInput } = require("../utils")
 const path = require("path");
 
