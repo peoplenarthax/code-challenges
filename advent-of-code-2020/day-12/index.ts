@@ -1,5 +1,3 @@
-import { isConstructorDeclaration } from "../node_modules/typescript/lib/typescript";
-
 const { readLinesInput } = require("../utils")
 const path = require("path");
 
